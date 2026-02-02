@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+    <link rel="stylesheet" href="css/date.css" />
+  </head>
+  <body>
+    <h1 title="choose a date">About the day February 14th, Saturday</h1>
+
+    <form class="form-group" onsubmit="event.preventDefault(); showMore();">
+      <label>I would like to take you to Coffee Chapters - Taft Ave ^__^</label>
+      <br />
+      <label>I'll be waiting after your class ends that day!</label>
+      <br />
+      <label>If you got a place in mind we can go there!</label>
+
+      <div>
+        <button class="button" type="submit">
+          Lastly...
+        </button>
+      </div>
+
+      <div id="more-content" class="hidden">
+        <p>You're a chapter in my life that I happily opened</p>
+        <p>There's so much more to know about you but in the midst of trying...</p>
+        <p>My heart flutters with excitement and happiness!!! 💕</p>
+        <img src="heartcat.gif" alt="Coffee date" />
+      </div>
+    </form>
+
+    <script>
+      function showMore() {
+        document.getElementById("more-content").classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
